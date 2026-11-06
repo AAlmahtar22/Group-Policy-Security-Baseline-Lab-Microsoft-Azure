@@ -1,8 +1,8 @@
-# Enterprise Group Policy Hardening & Ransomware Mitigation Baselines
-An automated security engineering workspace focused on deploying strict baseline defensive registries to a standalone Windows Server 2022 instance in Microsoft Azure.
+# Group Policy Security Baseline Lab (Microsoft Azure)
+A lab that creates two Group Policy objects for common security settings and links them to an Organizational Unit, using PowerShell on a Windows Server 2022 VM in Microsoft Azure.
 
 ## Project Architecture
-This repository demonstrates corporate endpoint hardening principles by injecting security configuration values directly into the system registries through Infrastructure as Code (IaC).
+Scripted deployment
 
 ## Core Policy Baselines Deployed
 * **Ransomware Mitigation (`SEC-Ransomware-Mitigations`):** Programmatically disabled Windows Script Host (WSH) registry endpoints to block email-borne script payloads (.vbs, .js) from executing.
