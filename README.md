@@ -5,12 +5,11 @@ A lab that creates two Group Policy objects for common security settings and lin
 Scripted deployment
 
 ## Core Policy Baselines Deployed
-* **Ransomware Mitigation (`SEC-Ransomware-Mitigations`):** Programmatically disabled Windows Script Host (WSH) registry endpoints to block email-borne script payloads (.vbs, .js) from executing.
-* **Data Privacy Protection (`SEC-System-Privacy-Hardening`):** Enforced enterprise-grade BitLocker volume encryption parameters utilizing advanced 256-bit AES algorithms.
-* **Targeted Allocation:** Mapped security configurations directly to an isolated Organizational Unit (OU) layer hosting production production assets.
+* **Ransomware Mitigation (`SEC-Ransomware-Mitigations`):** Disabled Windows Script Host through Group Policy to block .vbs and .js email attachments from running.
+* **Data Privacy Protection (`SEC-System-Privacy-Hardening`):** Configured a BitLocker drive encryption policy using 256-bit AES.
+* **Targeted Allocation:** Linked both GPOs to a dedicated Organizational Unit for test endpoints.
 
 ## Skills Demonstrated
 * Security Configuration Management
-* Windows Registry Hardening
-* Group Policy Architecture & Policy Linking
-* PowerShell Automation & Infrastructure as Code (IaC)
+* Group Policy (GPO) creation and linking
+* PowerShell Scripting
